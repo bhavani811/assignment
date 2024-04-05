@@ -12,8 +12,8 @@ step 4: load_fact_table,load_dim_tables tasks are invoked from the airflow dah t
 
 step 5 : Data cleansing such as removing duplicates, standaraize of grade names, stream,acaddemy name etc are done in the load_fact_table,load_dim_tables stored procedure
 
-step 6 : An entry to log table (log_table) is added after the every load of the data to fact and dim tables to handle the incremental loads based on the log table entry 
+step 6 : An entry to log table (log_table) is added after the every load of the data to fact and dim tables to handle the incremental loads using snapshot date column based on the log table entry 
 
-step 7 : Use of Merge clause to identlty delta data and merge data to target tables.
+step 7 : Use of Merge clause to identlty delta data based on the snapshot date column and merge data to target tables.
 
 step 8 : Airflow dag is assumed to be scheduled at 6PM every day 
