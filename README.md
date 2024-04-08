@@ -1,4 +1,4 @@
-# Pupil dataset assignment solution
+# Pupil dataset assignment solution # Please refer to the PPT sent in the mail for start schema data modelling diagram
 
 step 1: create bucket new globe with two sub folders pupildata and pupiattendance which will recieve daily attendance files from external sources
 
